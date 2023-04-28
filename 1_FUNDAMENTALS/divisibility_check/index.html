@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divisibility check</title>
+    <style>
+      input {
+        padding: 5px;
+        font-size: 16px;
+      }
+      button {
+        padding: 10px;
+        font-size: 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #result {
+        margin-top: 20px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Hello! This is a program to check if a number is divisible by another
+      number.
+    </h1>
+    <label for="numberToCheck">Number to check:</label>
+    <input type="number" id="numberToCheck" />
+
+    <br /><br />
+
+    <label for="divisor">Divisor:</label>
+    <input type="number" id="divisor" />
+
+    <br /><br />
+
+    <button onclick="divisibilityCheck()">Check</button>
+
+    <div id="result"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
