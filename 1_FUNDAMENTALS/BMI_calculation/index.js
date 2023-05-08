@@ -1,9 +1,11 @@
 function startCalculation() {
-  let bmiInterpretation;
-  let height = parseFloat(
-    prompt(`What is your height in meters? (e.g., 1.70)`)
-  );
-  let weight = parseFloat(prompt(`What is your weight in kilos? (e.g., 90)`));
+  let bmiInterpretation, message;
+  let height = parseFloat(document.getElementById("height").value);
+  let weight = parseFloat(document.getElementById("weight").value);
+
+  if (isNaN(height) || isNaN(weight)) {
+    return (message = "Enter valid measurements");
+  }
 
   let bmi = weight / (height * height);
 
@@ -25,9 +27,9 @@ function startCalculation() {
       break;
   }
 
-  alert(
-    `Your BMI is ${bmi.toFixed(
-      2
-    )}\nYour BMI classification is ${bmiInterpretation}`
-  );
+  message = `Your BMI is ${bmi.toFixed(
+    2
+  )}\nYour BMI classification is ${bmiInterpretation}`;
+
+  document.getElementById("result").textContent = message;
 }

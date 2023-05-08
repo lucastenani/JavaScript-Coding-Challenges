@@ -1,14 +1,14 @@
 function startCalculation() {
   let triangleArea, trianglePerimeter;
-  let triangleLength = Number(prompt("What is the length of the triangle?"));
-  let triangleWide = Number(prompt("How wide is the triangle?"));
+  let triangleLength = Number(document.getElementById("triangleLength").value);
+  let triangleWide = Number(document.getElementById("triangleWide").value);
 
   triangleArea = calculateArea(triangleLength, triangleWide);
   trianglePerimeter = calculatePerimeter(triangleLength, triangleWide);
 
-  alert(`Assuming the triangle is ${triangleLength} long and ${triangleWide} wide.
-The area of the triangle is ${triangleArea}.
-The perimeter of the triangle is ${trianglePerimeter}`);
+  let message = `Assuming the triangle has a base length of ${triangleLength} and a wide of ${triangleWide}, the area of the triangle is ${triangleArea} and the perimeter is ${trianglePerimeter}.`;
+
+  document.getElementById("result").textContent = message;
 }
 
 function calculateArea(length, wide) {

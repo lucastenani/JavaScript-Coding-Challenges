@@ -5,9 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>String Concatenation</title>
+    <link rel="stylesheet" href="../global.css" />
   </head>
   <body>
-    <button onclick="startConcat()">Generate welcome</button>
+    <main>
+      <label for="name">What is your name?</label>
+      <input type="text" id="name" />
+
+      <label for="age">How old are you?</label>
+      <input type="number" id="age" />
+
+      <label for="city">What city do you live in?</label>
+      <input type="text" id="city" />
+
+      <button onclick="startConcat()">Generate welcome</button>
+
+      <div id="result"></div>
+    </main>
     <script src="./index.js"></script>
   </body>
 </html>

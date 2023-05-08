@@ -1,5 +1,4 @@
 // Create a temperature conversion code from Celsius to Fahrenheit and vice versa
-
 function convertTemperature(originalUnit) {
   let convertedTemp, formula;
   let originalTemp = prompt(

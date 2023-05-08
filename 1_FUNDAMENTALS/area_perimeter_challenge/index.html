@@ -5,11 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Area Perimeter Challenge</title>
+    <link rel="stylesheet" href="../global.css" />
   </head>
   <body>
-    <button onclick="startCalculation()">
-      Start calculating the area and perimeter of a triangle
-    </button>
+    <main>
+      <label for="triangleLength">What is the length of the triangle?</label>
+      <input type="number" id="triangleLength" />
+
+      <label for="triangleWide">How wide is the triangle?</label>
+      <input type="number" id="triangleWide" />
+
+      <button onclick="startCalculation()">
+        Start calculating the area and perimeter of a triangle
+      </button>
+
+      <div id="result"></div>
+    </main>
+
     <script src="./index.js"></script>
   </body>
 </html>

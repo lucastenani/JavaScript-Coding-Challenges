@@ -1,14 +1,14 @@
 function startConcat() {
-  let name = prompt("What is your name?");
-  let age = prompt("How old are you?");
-  let city = prompt("What city do you live in?");
+  let name = document.getElementById("name").value;
+  let age = document.getElementById("age").value;
+  let city = document.getElementById("city").value;
 
-  if (isNaN(Number(age)) || Number(age) <= 0 || Number(age) > 100) {
+  if (Number(age) <= 0 || Number(age) > 100) {
     alert("Age is not valid");
     return;
   }
 
-  alert(
-    `Hi ${name}! You're ${age} years old and live in ${city}. Nice to meet you!`
-  );
+  let message = `Hi ${name}! You're ${age} years old and live in ${city}. Nice to meet you!`;
+
+  document.getElementById("result").textContent = message;
 }
