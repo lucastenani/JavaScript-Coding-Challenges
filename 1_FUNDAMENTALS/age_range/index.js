@@ -1,32 +1,20 @@
 function checkAgeRange() {
-  let ageRange;
+  let ageRange = false;
   let age = parseInt(document.getElementById("age").value);
 
-  switch (true) {
-    case age >= 0 && age <= 12:
-      ageRange = "child";
-      break;
-
-    case age >= 13 && age <= 17:
-      ageRange = "teenager";
-      break;
-
-    case age >= 18 && age <= 59:
-      ageRange = "adult";
-      break;
-
-    case age >= 60 && age <= 100:
-      ageRange = "elderly";
-      break;
-
-    default:
-      ageRange = false;
-      break;
+  if (age >= 0 && age <= 12) {
+    ageRange = "child";
+  } else if (age >= 13 && age <= 17) {
+    ageRange = "teenager";
+  } else if (age >= 18 && age <= 59) {
+    ageRange = "adult";
+  } else if (age >= 60 && age <= 100) {
+    ageRange = "elderly";
   }
 
   let message = ageRange
     ? `As long as you are ${age} years old, you qualify as a ${ageRange}.`
-    : "Your age is not valid";
+    : "Your age is not valid.";
 
   document.getElementById("result").textContent = message;
 }
