@@ -1,6 +1,6 @@
 function checkAgeRange() {
   let ageRange = false;
-  let age = parseInt(document.getElementById("age").value);
+  const age = parseInt(document.getElementById("age").value);
 
   if (age >= 0 && age <= 12) {
     ageRange = "child";

@@ -1,7 +1,7 @@
 function startConcat() {
-  let name = document.getElementById("name").value;
-  let age = document.getElementById("age").value;
-  let city = document.getElementById("city").value;
+  const name = document.getElementById("name").value;
+  const age = document.getElementById("age").value;
+  const city = document.getElementById("city").value;
 
   if (Number(age) <= 0 || Number(age) > 100) {
     alert("Age is not valid");

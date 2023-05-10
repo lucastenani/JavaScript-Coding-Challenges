@@ -1,7 +1,9 @@
 function startCalculation() {
   let triangleArea, trianglePerimeter;
-  let triangleLength = Number(document.getElementById("triangleLength").value);
-  let triangleWide = Number(document.getElementById("triangleWide").value);
+  const triangleLength = Number(
+    document.getElementById("triangleLength").value
+  );
+  const triangleWide = Number(document.getElementById("triangleWide").value);
 
   triangleArea = calculateArea(triangleLength, triangleWide);
   trianglePerimeter = calculatePerimeter(triangleLength, triangleWide);

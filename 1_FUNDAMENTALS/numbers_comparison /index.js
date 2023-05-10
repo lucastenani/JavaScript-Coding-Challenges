@@ -1,6 +1,6 @@
 function compareNumbers() {
-  let firstNumber = Number(document.getElementById("firstNumber").value);
-  let secondNumber = Number(document.getElementById("secondNumber").value);
+  const firstNumber = Number(document.getElementById("firstNumber").value);
+  const secondNumber = Number(document.getElementById("secondNumber").value);
   let message = "";
 
   if (firstNumber === secondNumber) {

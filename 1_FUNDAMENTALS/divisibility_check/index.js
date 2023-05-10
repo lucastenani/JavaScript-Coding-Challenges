@@ -1,6 +1,6 @@
 function divisibilityCheck() {
   let numberToCheck = document.getElementById("numberToCheck").value;
-  let divisor = document.getElementById("divisor").value;
+  const divisor = document.getElementById("divisor").value;
 
   let isDivisible = numberToCheck % divisor === 0;
 

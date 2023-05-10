@@ -1,7 +1,7 @@
 function startCalculation() {
   let bmiInterpretation, message;
-  let height = parseFloat(document.getElementById("height").value);
-  let weight = parseFloat(document.getElementById("weight").value);
+  const height = parseFloat(document.getElementById("height").value);
+  const weight = parseFloat(document.getElementById("weight").value);
 
   if (isNaN(height) || isNaN(weight)) {
     return (message = "Enter valid measurements");
