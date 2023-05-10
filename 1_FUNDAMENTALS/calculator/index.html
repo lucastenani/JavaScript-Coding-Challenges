@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/global.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main>
+      <h1>Calculator</h1>
+
+      <label for="firstNumber">Enter the first number here:</label>
+      <input type="number" id="firstNumber" />
+
+      <label for="operator">Choose operator</label>
+      <select name="operator" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+
+      <label for="secondNumber">Enter the second number here:</label>
+      <input type="number" id="secondNumber" />
+
+      <button onclick="calculate()">Compare numbers</button>
+
+      <div id="result"></div>
+    </main>
+    <script>
+      function calculate() {
+        const firstNumber = Number(
+          document.getElementById("firstNumber").value
+        );
+        const secondNumber = Number(
+          document.getElementById("secondNumber").value
+        );
+        const operator = document.getElementById("operator").value;
+        let result;
+
+        switch (operator) {
+          case "+":
+            result = firstNumber + secondNumber;
+            break;
+          case "-":
+            result = firstNumber - secondNumber;
+            break;
+          case "*":
+            result = firstNumber * secondNumber;
+            break;
+          case "/":
+            result = firstNumber / secondNumber;
+            break;
+        }
+
+        document.getElementById(
+          "result"
+        ).textContent = `The result of ${firstNumber} + ${secondNumber} is ${result}`;
+      }
+    </script>
+  </body>
+</html>
