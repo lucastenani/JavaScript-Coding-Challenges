@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rate Calculation</title>
+    <link rel="stylesheet" href="/global.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Application that calculates the rate according to the user's age</h1>
+      <p>The standard fare is $2.50</p>
+
+      <label for="userName">Enter your name here:</label>
+      <input type="text" id="userName" name="userName" />
+
+      <label for="userAge">Enter your age here:</label>
+      <input type="text" id="userAge" name="userAge" />
+
+      <div>
+        <label for="isStudent">You are a student?</label>
+        <input type="checkbox" name="isStudent" id="isStudent" />
+      </div>
+
+      <button onclick="calculateRate()">Calculate</button>
+
+      <div id="result"></div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
