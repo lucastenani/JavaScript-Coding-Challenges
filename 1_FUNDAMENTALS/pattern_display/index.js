@@ -9,13 +9,8 @@ function showDisplayPattern() {
 
   for (let i = 1; i <= limitNumber; i++) {
     const li = document.createElement("li");
-    let asterisk = "*";
 
-    for (let e = 2; e <= i; e++) {
-      asterisk += "*";
-    }
-
-    li.textContent = asterisk;
+    li.textContent = "*".repeat(i);
     tableList.appendChild(li);
   }
 }
