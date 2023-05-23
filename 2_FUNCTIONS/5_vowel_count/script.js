@@ -1,8 +1,9 @@
 function vowelCount(string) {
   let count = 0;
+  const vowels = "aeiou";
 
   for (const e of string.toLowerCase()) {
-    if (e === "a" || e === "e" || e === "i" || e === "o" || e === "u") {
+    if (vowels.includes(e)) {
       count++;
     }
   }
