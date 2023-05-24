@@ -2,9 +2,9 @@ function mostFrequentElement(array) {
   let result = 0;
 
   array.forEach((element) => {
-    const frequency = array.filter((x) => x == element).length;
+    const frequencyCount = array.filter((x) => x == element).length;
 
-    if (frequency > result) {
+    if (frequencyCount > result) {
       result = element;
     }
   });
