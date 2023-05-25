@@ -1,9 +1,5 @@
 function arrayConcatenation(arr1, arr2) {
-  let result = arr1;
-
-  arr2.forEach((e) => result.push(e));
-
-  return result;
+  return arr1.concat(arr2);
 }
 
 console.log(arrayConcatenation([1, 2, 3], [4, 5, 6]));
