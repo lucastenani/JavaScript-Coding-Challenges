@@ -16,6 +16,8 @@ const myOtherObject = {
   prop5: 1000,
 };
 
+const emptyObj = {};
+
 function propertiesSum(object) {
   let result = 0;
   for (const key in object) {
@@ -31,3 +33,6 @@ console.log(propertiesSum(myObject));
 
 console.log(propertiesSum(myOtherObject));
 // Expected output: 1033.14159
+
+console.log(propertiesSum(emptyObj));
+// Expected output: 0
