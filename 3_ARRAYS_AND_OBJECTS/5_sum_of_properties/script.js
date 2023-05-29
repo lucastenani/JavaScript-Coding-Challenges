@@ -14,6 +14,7 @@ const myOtherObject = {
   prop3: -5,
   prop4: 3.14159,
   prop5: 1000,
+  prop6: "String",
 };
 
 const emptyObj = {};
@@ -21,7 +22,7 @@ const emptyObj = {};
 function propertiesSum(object) {
   let result = 0;
   for (const key in object) {
-    if (object.hasOwnProperty(key)) {
+    if (object.hasOwnProperty(key) && typeof object[key] === "number") {
       result += object[key];
     }
   }
