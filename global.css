@@ -21,6 +21,10 @@ h1 {
   margin-bottom: 10px;
 }
 
+#title-to-change {
+  margin-bottom: 45px;
+}
+
 input,
 select {
   padding: 5px;
