@@ -4,10 +4,10 @@ const gamesListArray = Array.from(gamesList.children);
 
 searchButton.addEventListener("click", function () {
   const searchValue = document
-    .querySelector("#search-value")
+    .getElementById("search-value")
     .value.toLowerCase();
 
-  gamesListArray.forEach(function (e) {
+  gamesListArray.forEach((e) => {
     !e.textContent.toLowerCase().includes(searchValue)
       ? gamesList.removeChild(e)
       : "";
