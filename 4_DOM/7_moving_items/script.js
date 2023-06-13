@@ -17,6 +17,11 @@ function moveItem(direction) {
 }
 
 function selectItem(event) {
+  if (event.target.classList.contains("selected")) {
+    selectedItem.classList.remove("selected");
+    return (selectedItem = null);
+  }
+
   if (selectedItem) {
     selectedItem.classList.remove("selected");
   }
