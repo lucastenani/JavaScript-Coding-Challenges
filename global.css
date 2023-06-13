@@ -94,3 +94,39 @@ li:nth-child(3n - 1)::marker {
   background-color: #4caf50;
   color: #ffffff;
 }
+
+#modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: gray;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  overflow: auto;
+  animation: modal-animation 1s ease-out;
+}
+
+@keyframes modal-animation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#modal h1 {
+  color: #ffffff;
+  margin-bottom: 80px;
+}
+
+#modal.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
